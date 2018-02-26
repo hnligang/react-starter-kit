@@ -32,7 +32,7 @@ class ConfirmDialog extends React.Component {
   }
 
   static childContextTypes = {
-    color: PropTypes.string
+    confirmFn: PropTypes.func
   }
   
   getChildContext() {
@@ -48,11 +48,11 @@ class ConfirmDialog extends React.Component {
   render() {
     let content  
     if(this.state.open) {
-      content = (<div>11111</div>)
+      content = (<div style={{marginTop: 20}}>It is a global component</div>)
     }
     return (<div>
-      {content}
       {this.props.children}
+      {content}
     </div>)
   }
 }

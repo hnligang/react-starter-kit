@@ -9,7 +9,7 @@ import { ConfirmDialog } from './GlobalComponent'
 export default class PageLayout extends React.Component {
 
   /*
-    This component is used to do the following
+    This component is used to do the following thing
     1、defining the UI framework theme. For example, material-ui
     2、defining global commponets or setting context
   */

@@ -13,13 +13,19 @@ class LoginRedirectContainer extends Component {
     const isLoggingOut = prevProps.isLoggedIn && !this.props.isLoggedIn
     const isLoggingIn = !prevProps.isLoggedIn && this.props.isLoggedIn
     if (isLoggingIn) {
-
+      // login redirect
+      browserHistory.replace({
+        pathname: this.props.redirectUrl,
+        state: this.props.redirectState,
+        query: this.props.redirectQuery
+      })
     } else if (isLoggingOut) {
 
     }
   }
 
   render () {
+    console.log('LoginRedirectContainer', this.props)
     return this.props.children
   }
 }
@@ -41,8 +47,6 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => {
   return bindActionCreators({
-    fetchUserPermissions,
-    fetchConfig
   }, dispatch)
 }
 

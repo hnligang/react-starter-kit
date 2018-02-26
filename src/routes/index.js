@@ -3,8 +3,8 @@
  */
 
  // We only need to import the modules necessary for initial render
-import CoreLayout from '../layouts/PageLayout'
-import Home from '../components/Home'
+import CoreLayout from '../layouts/coreLayout'
+import Home from './Home'
 
 /*  Note: Instead of using JSX, we recommend using react-router
     PlainRoute objects to build route definitions.   */
