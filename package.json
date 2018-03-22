@@ -1,7 +1,7 @@
 {
   "name": "react-starter-kit",
   "version": "1.0.0",
-  "description": "create a react project using redux, react-router, react-from, immutable",
+  "description": "create a react project using redux, react-redux, react-router, react-from, immutable",
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",
