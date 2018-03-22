@@ -1,4 +1,4 @@
-获取最新版本[点击这里](https://github.com/ligangwolai/react-starter-kit)
+获取最新版本[点击这里](https://github.com/ligangwolai/react-starter-kit) <br />
 使用手册
 
 ## 目录
