@@ -3,11 +3,15 @@
 
 ## 目录
 
-- [文件目录](#updating-to-new-releases)
-- [Sending Feedback](#sending-feedback)
-- [Folder Structure](#folder-structure)
-- [Available Scripts](#available-scripts)
+- [文件目录](#file-directory)
+- [常用脚本](#available-scripts)
   - [npm start](#npm-start)
   - [npm test](#npm-test)
   - [npm run build](#npm-run-build)
   - [npm run eject](#npm-run-eject)
+- [webpack配置](#webpack-configure)
+- [路由](#route-use)
+- [代码分割](#code-spliting)
+- [动态state](#dynamic-state)
+- [简单redux示例](#smpile-example)
+- [redux form](#redux-form)
