@@ -4,7 +4,7 @@
 import { combineReducers } from 'redux'
 import { enableBatching } from 'redux-batched-actions'
 import locationReducer from './location'
-import redirectReducer, { reducerKey as REDIRECT_REDUCER_KEY } from 'modules/redirect'
+import redirectReducer, { reducerKey as REDIRECT_REDUCER_KEY } from '../modules/redirect'
 // import { Cache } from 'wnpm-common'
 
 export const makeRootReducer = (asyncReducers) => {

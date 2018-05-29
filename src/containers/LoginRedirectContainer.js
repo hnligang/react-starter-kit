@@ -2,6 +2,7 @@
   create by ligang on 2018-02-24 15:49:40
  */
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { browserHistory } from 'react-router'
@@ -25,17 +26,16 @@ class LoginRedirectContainer extends Component {
   }
 
   render () {
-    console.log('LoginRedirectContainer', this.props)
     return this.props.children
   }
 }
 
 LoginRedirectContainer.propTypes = {
-  redirectUrl: React.PropTypes.string,
-  redirectState: React.PropTypes.object,
-  redirectQuery: React.PropTypes.object,
-  children: React.PropTypes.any,
-  location: React.PropTypes.any,
+  redirectUrl: PropTypes.any,
+  redirectState: PropTypes.object,
+  redirectQuery: PropTypes.object,
+  children: PropTypes.any,
+  location: PropTypes.any
 }
 
 const mapStateToProps = (state) => ({

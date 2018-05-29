@@ -1,7 +1,8 @@
  /*
   create by ligang on 2018-02-24 15:36:04
  */
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { browserHistory, Router } from 'react-router'
 import { Provider } from 'react-redux'
 import LoginRedirectContainer from './LoginRedirectContainer'

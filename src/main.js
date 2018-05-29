@@ -2,9 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import createStore from './store/createStore'
 import AppContainer from './containers/AppContainer'
-import injectTapEventPlugin from 'react-tap-event-plugin'
+// import injectTapEventPlugin from 'react-tap-event-plugin'
 import { match } from 'react-router'
-injectTapEventPlugin() //解决ios点击事件300ms延时
+//injectTapEventPlugin() //解决ios点击事件300ms延时
 
 /*
   Store Instantiation 

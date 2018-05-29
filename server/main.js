@@ -6,6 +6,7 @@ const webpackConfig = require('../build/webpack.config')
 const project = require('../project.config')
 const compress = require('compression')
 
+
 const app = express()
 app.use(compress())
 
@@ -63,5 +64,20 @@ if (project.env === 'development') {
   // server in production.
   app.use(express.static(path.resolve(project.basePath, project.outDir)))
 }
+
+// const mysql = require('mysql')
+// const connection = mysql.createConnection({
+//   host: '120.78.137.162',
+//   user: 'root',
+//   password: 'ligang088',
+//   database: 'blog'
+// })
+
+// connection.query('select * from students', (error, result, fields) => {
+//   if(error) {
+//     throw error;
+//   }
+//   console.log('students', result)
+// })
 
 module.exports = app
